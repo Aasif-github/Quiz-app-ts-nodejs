@@ -1,0 +1,19 @@
+install npm
+
+npm install --global yarn 
+
+(It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system)
+
+* yarn init
+* yarn add typescript
+* yarn add express
+* tsc --init
+
+> tsc [to transpile the typescript into javasript.]
+> tsc --noEmitOnError  [if error in file.ts then it will not transpile]
+
+* yarn add @types/express
+
+
+------------------------
+https://blog.logrocket.com/how-to-set-up-node-typescript-express/

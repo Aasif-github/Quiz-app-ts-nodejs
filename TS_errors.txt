@@ -1,0 +1,860 @@
+--- after install -- npm i @types/express
+
+mzq163@zmq163:~/development/sample-work/typescript/Quiz-app$ tsc
+node_modules/@types/express-serve-static-core/index.d.ts:93:68 - error TS1110: Type expected.
+
+93 type RemoveTail<S extends string, Tail extends string> = S extends `${infer P}${Tail}` ? P : S;
+                                                                      ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:93:77 - error TS1005: '}' expected.
+
+93 type RemoveTail<S extends string, Tail extends string> = S extends `${infer P}${Tail}` ? P : S;
+                                                                               ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:93:78 - error TS1128: Declaration or statement expected.
+
+93 type RemoveTail<S extends string, Tail extends string> = S extends `${infer P}${Tail}` ? P : S;
+                                                                                ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:93:80 - error TS1005: ';' expected.
+
+93 type RemoveTail<S extends string, Tail extends string> = S extends `${infer P}${Tail}` ? P : S;
+                                                                                  ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:95:33 - error TS1005: ';' expected.
+
+95     RemoveTail<RemoveTail<S, `/${string}`>, `-${string}`>,
+                                   ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:95:48 - error TS1005: ';' expected.
+
+95     RemoveTail<RemoveTail<S, `/${string}`>, `-${string}`>,
+                                                  ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:96:8 - error TS1005: ';' expected.
+
+96     `.${string}`
+          ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:101:22 - error TS1005: ';' expected.
+
+101     : Route extends `${string}(${string}` ? ParamsDictionary // TODO: handling for regex parameters
+                         ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:101:23 - error TS1005: ';' expected.
+
+101     : Route extends `${string}(${string}` ? ParamsDictionary // TODO: handling for regex parameters
+                          ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:101:33 - error TS1005: ')' expected.
+
+101     : Route extends `${string}(${string}` ? ParamsDictionary // TODO: handling for regex parameters
+                                    ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:102:22 - error TS1005: ';' expected.
+
+102     : Route extends `${string}:${infer Rest}` ?
+                         ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:102:23 - error TS1005: ';' expected.
+
+102     : Route extends `${string}:${infer Rest}` ?
+                          ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:102:31 - error TS1128: Declaration or statement expected.
+
+102     : Route extends `${string}:${infer Rest}` ?
+                                  ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:102:33 - error TS1005: ';' expected.
+
+102     : Route extends `${string}:${infer Rest}` ?
+                                    ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:102:40 - error TS1005: ';' expected.
+
+102     : Route extends `${string}:${infer Rest}` ?
+                                           ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:105:56 - error TS1005: ';' expected.
+
+105                     : GetRouteParameter<Rest> extends `${infer ParamName}?` ? { [P in ParamName]?: string }
+                                                           ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:105:57 - error TS1005: ';' expected.
+
+105                     : GetRouteParameter<Rest> extends `${infer ParamName}?` ? { [P in ParamName]?: string }
+                                                            ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:105:64 - error TS1005: ';' expected.
+
+105                     : GetRouteParameter<Rest> extends `${infer ParamName}?` ? { [P in ParamName]?: string }
+                                                                   ~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:105:74 - error TS1128: Declaration or statement expected.
+
+105                     : GetRouteParameter<Rest> extends `${infer ParamName}?` ? { [P in ParamName]?: string }
+                                                                             ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:108:30 - error TS1005: ';' expected.
+
+108             & (Rest extends `${GetRouteParameter<Rest>}${infer Next}` ? RouteParameters<Next> : unknown)
+                                 ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:108:31 - error TS1005: ';' expected.
+
+108             & (Rest extends `${GetRouteParameter<Rest>}${infer Next}` ? RouteParameters<Next> : unknown)
+                                  ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:108:55 - error TS1005: '(' expected.
+
+108             & (Rest extends `${GetRouteParameter<Rest>}${infer Next}` ? RouteParameters<Next> : unknown)
+                                                          ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:108:57 - error TS1005: ';' expected.
+
+108             & (Rest extends `${GetRouteParameter<Rest>}${infer Next}` ? RouteParameters<Next> : unknown)
+                                                            ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:108:64 - error TS1005: ';' expected.
+
+108             & (Rest extends `${GetRouteParameter<Rest>}${infer Next}` ? RouteParameters<Next> : unknown)
+                                                                   ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:219:41 - error TS1005: ';' expected.
+
+219      * Map the given param placeholder `name`(s) to the given callback(s).
+                                            ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:228:31 - error TS1005: ';' expected.
+
+228      * of the user. Once the `next()` function is invoked, just like middleware
+                                  ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:254:62 - error TS1005: ';' expected.
+
+254      * Special-cased "all" method, applying the given route `path`,
+                                                                 ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:331:30 - error TS1005: ';' expected.
+
+331  * Options passed down into `res.cookie`
+                                 ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:373:49 - error TS1005: ';' expected.
+
+373  * @param P  For most requests, this should be `ParamsDictionary`, but if you're
+                                                    ~~~~~~~~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:374:59 - error TS1005: ';' expected.
+
+374  * using this in a route handler for a route that uses a `RegExp` or a wildcard
+                                                              ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:375:5 - error TS1005: ';' expected.
+
+375  * `string` path (e.g. `'/user/*'`), then `req.params` will be an array, in
+        ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:375:25 - error TS1005: ';' expected.
+
+375  * `string` path (e.g. `'/user/*'`), then `req.params` will be an array, in
+                            ~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:375:44 - error TS1005: ';' expected.
+
+375  * `string` path (e.g. `'/user/*'`), then `req.params` will be an array, in
+                                               ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:376:31 - error TS1005: ';' expected.
+
+376  * which case you should use `ParamsArray` instead.
+                                  ~~~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:381:84 - error TS1005: ';' expected.
+
+381  *     app.get('/user/:id', (req, res) => res.send(req.params.id)); // implicitly `ParamsDictionary`
+                                                                                       ~~~~~~~~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:395:13 - error TS1005: ';' expected.
+
+395      * The `Referrer` header field is special-cased,
+                ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:396:14 - error TS1005: ';' expected.
+
+396      * both `Referrer` and `Referer` are interchangeable.
+                 ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:396:29 - error TS1005: ';' expected.
+
+396      * both `Referrer` and `Referer` are interchangeable.
+                                ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:409:20 - error TS1005: ';' expected.
+
+409      * Aliased as `req.header()`.
+                       ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:418:28 - error TS1005: ';' expected.
+
+418      * Check if the given `type(s)` is acceptable, returning
+                               ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:419:45 - error TS1005: ';' expected.
+
+419      * the best match when true, otherwise `undefined`, in which
+                                                ~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:422:13 - error TS1005: ';' expected.
+
+422      * The `type` value may be a single mime type string
+                ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:496:56 - error TS1005: ';' expected.
+
+496      * Parse Range header field, capping to the given `size`.
+                                                           ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:500:48 - error TS1005: ';' expected.
+
+500      * If the Range header field is not given `undefined` is returned.
+                                                   ~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:518:35 - error TS1005: ';' expected.
+
+518      * Return the value of param `name` when present or `defaultValue`.
+                                      ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:518:58 - error TS1005: ';' expected.
+
+518      * Return the value of param `name` when present or `defaultValue`.
+                                                             ~~~~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:524:36 - error TS1005: ';' expected.
+
+524      * To utilize request bodies, `req.body`
+                                       ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:526:13 - error TS1005: ';' expected.
+
+526      * the `connect.bodyParser()` middleware.
+                ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:532:53 - error TS1005: ';' expected.
+
+532      * header field, and it contains the give mime `type`.
+                                                        ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:572:26 - error TS1005: ';' expected.
+
+572      * "trust proxy" is `true` return
+                             ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:575:39 - error TS1005: ';' expected.
+
+575      * Value may be undefined if the `req.socket` is destroyed
+                                          ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:581:31 - error TS1005: ';' expected.
+
+581      * When "trust proxy" is `true`, parse
+                                  ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:604:24 - error TS1005: ';' expected.
+
+604      * Short-hand for `url.parse(req.url).pathname`.
+                           ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:684:76 - error TS1005: ';' expected.
+
+684     /** Object containing HTTP headers to serve with the file. The header `Content-Disposition` will be overridden by the filename argument. */
+                                                                               ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:694:20 - error TS1005: ';' expected.
+
+694      * Set status `code`.
+                       ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:699:46 - error TS1005: ';' expected.
+
+699      * Set the response HTTP status code to `statusCode` and send its string representation as the response body.
+                                                 ~~~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:712:46 - error TS1005: ';' expected.
+
+712      * Set Link header field with the given `links`.
+                                                 ~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:760:40 - error TS1005: ';' expected.
+
+760      * Transfer the file at the given `path`.
+                                           ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:763:22 - error TS1005: ';' expected.
+
+763      * The callback `fn(err)` is invoked when the transfer is complete
+                         ~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:764:51 - error TS1005: ';' expected.
+
+764      * or when an error occurs. Be sure to check `res.headersSent`
+                                                      ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:770:13 - error TS1005: ';' expected.
+
+770      *   - `maxAge`   defaulting to 0 (can be string converted by `ms`)
+                ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:770:68 - error TS1005: ';' expected.
+
+770      *   - `maxAge`   defaulting to 0 (can be string converted by `ms`)
+                                                                       ~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:771:13 - error TS1005: ';' expected.
+
+771      *   - `root`     root directory for relative filenames
+                ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:772:13 - error TS1005: ';' expected.
+
+772      *   - `headers`  object of headers to serve with file
+                ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:773:13 - error TS1005: ';' expected.
+
+773      *   - `dotfiles` serve dotfiles, defaulting to false; can be `"allow"` to send them
+                ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:773:68 - error TS1005: ';' expected.
+
+773      *   - `dotfiles` serve dotfiles, defaulting to false; can be `"allow"` to send them
+                                                                       ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:775:43 - error TS1005: ';' expected.
+
+775      * Other options are passed along to `send`.
+                                              ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:779:48 - error TS1005: ';' expected.
+
+779      *  The following example illustrates how `res.sendFile()` may
+                                                   ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:780:44 - error TS1005: ';' expected.
+
+780      *  be used as an alternative for the `static()` middleware for
+                                               ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:781:47 - error TS1005: ';' expected.
+
+781      *  dynamic situations. The code backing `res.sendFile()` is actually
+                                                  ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:820:40 - error TS1005: ';' expected.
+
+820      * Transfer the file at the given `path` as an attachment.
+                                           ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:822:54 - error TS1005: ';' expected.
+
+822      * Optionally providing an alternate attachment `filename`,
+                                                         ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:823:31 - error TS1005: ';' expected.
+
+823      * and optional callback `fn(err)`. The callback is invoked
+                                  ~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:825:35 - error TS1005: ';' expected.
+
+825      * ocurred. Be sure to check `res.headersSent` if you plan to respond.
+                                      ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:830:26 - error TS1005: ';' expected.
+
+830      * This method uses `res.sendfile()`.
+                             ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:837:49 - error TS1005: ';' expected.
+
+837      * Set _Content-Type_ response header with `type` through `mime.lookup()`
+                                                    ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:837:64 - error TS1005: ';' expected.
+
+837      * Set _Content-Type_ response header with `type` through `mime.lookup()`
+                                                                   ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:838:66 - error TS1005: ';' expected.
+
+838      * when it does not contain "/", or set the Content-Type to `type` otherwise.
+                                                                     ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:851:49 - error TS1005: ';' expected.
+
+851      * Set _Content-Type_ response header with `type` through `mime.lookup()`
+                                                    ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:851:64 - error TS1005: ';' expected.
+
+851      * Set _Content-Type_ response header with `type` through `mime.lookup()`
+                                                                   ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:852:66 - error TS1005: ';' expected.
+
+852      * when it does not contain "/", or set the Content-Type to `type` otherwise.
+                                                                     ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:865:52 - error TS1005: ';' expected.
+
+865      * Respond to the Acceptable formats using an `obj`
+                                                       ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:868:26 - error TS1005: ';' expected.
+
+868      * This method uses `req.accepted`, an array of
+                             ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:876:54 - error TS1005: ';' expected.
+
+876      * you may alter this within the callback using `res.type()`
+                                                         ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:877:12 - error TS1005: ';' expected.
+
+877      * or `res.set('Content-Type', ...)`.
+               ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:877:39 - error TS1109: Expression expected.
+
+877      * or `res.set('Content-Type', ...)`.
+                                          ~
+
+node_modules/@types/express-serve-static-core/index.d.ts:910:38 - error TS1005: ';' expected.
+
+910      * By default Express passes an `Error`
+                                         ~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:911:36 - error TS1005: ';' expected.
+
+911      * with a `.status` of 406 to `next(err)`
+                                       ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:919:72 - error TS1005: ';' expected.
+
+919      * Set _Content-Disposition_ header to _attachment_ with optional `filename`.
+                                                                           ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:924:20 - error TS1005: ';' expected.
+
+924      * Set header `field` to `val`, or pass
+                       ~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:924:31 - error TS1005: ';' expected.
+
+924      * Set header `field` to `val`, or pass
+                                  ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:933:20 - error TS1005: ';' expected.
+
+933      * Aliased as `res.header()`.
+                       ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:944:31 - error TS1005: ';' expected.
+
+944     /** Get value for header `field`. */
+                                  ~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:947:23 - error TS1005: ';' expected.
+
+947     /** Clear cookie `name`. */
+                          ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:951:20 - error TS1005: ';' expected.
+
+951      * Set cookie `name` to `val`, with the given `options`.
+                       ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:951:30 - error TS1005: ';' expected.
+
+951      * Set cookie `name` to `val`, with the given `options`.
+                                 ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:951:52 - error TS1005: ';' expected.
+
+951      * Set cookie `name` to `val`, with the given `options`.
+                                                       ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:955:14 - error TS1005: ';' expected.
+
+955      *    - `maxAge`   max-age in milliseconds, converted to `expires`
+                 ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:955:63 - error TS1005: ';' expected.
+
+955      *    - `maxAge`   max-age in milliseconds, converted to `expires`
+                                                                  ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:956:14 - error TS1005: ';' expected.
+
+956      *    - `signed`   sign the cookie
+                 ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:957:14 - error TS1005: ';' expected.
+
+957      *    - `path`     defaults to "/"
+                 ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:972:36 - error TS1005: ';' expected.
+
+972      * Set the location header to `url`.
+                                       ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:974:19 - error TS1005: ';' expected.
+
+974      * The given `url` can also be the name of a mapped url, for
+                      ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:986:46 - error TS1005: ';' expected.
+
+986      *   When an application is mounted and `res.location()`
+                                                 ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1000:31 - error TS1005: ';' expected.
+
+1000      * Redirect to the given `url` with optional response `status`
+                                   ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1000:60 - error TS1005: ';' expected.
+
+1000      * Redirect to the given `url` with optional response `status`
+                                                                ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1003:23 - error TS1005: ';' expected.
+
+1003      * The resulting `url` is determined by `res.location()`, so
+                           ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1003:46 - error TS1005: ';' expected.
+
+1003      * The resulting `url` is determined by `res.location()`, so
+                                                  ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1005:9 - error TS1005: ';' expected.
+
+1005      * `"back"` etc.
+             ~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1022:16 - error TS1005: ';' expected.
+
+1022      * Render `view` with the given `options` and optional callback `fn`.
+                    ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1022:38 - error TS1005: ';' expected.
+
+1022      * Render `view` with the given `options` and optional callback `fn`.
+                                          ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1022:70 - error TS1005: ';' expected.
+
+1022      * Render `view` with the given `options` and optional callback `fn`.
+                                                                          ~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1028:12 - error TS1005: ';' expected.
+
+1028      *  - `cache`     boolean hinting to the engine it should cache
+                ~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1029:12 - error TS1005: ';' expected.
+
+1029      *  - `filename`  filename of the view being rendered
+                ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1099:53 - error TS1005: ';' expected.
+
+1099      * Register the given template engine callback `fn`
+                                                         ~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1100:12 - error TS1005: ';' expected.
+
+1100      * as `ext`.
+                ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1102:25 - error TS1005: ';' expected.
+
+1102      * By default will `require()` the engine based on the
+                             ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1117:52 - error TS1005: ';' expected.
+
+1117      * though note that it aliases this method as `ejs.__express` internally
+                                                        ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1132:16 - error TS1005: ';' expected.
+
+1132      * Assign `setting` to `val`, or return `setting`'s value.
+                    ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1132:29 - error TS1005: ';' expected.
+
+1132      * Assign `setting` to `val`, or return `setting`'s value.
+                                 ~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1132:46 - error TS1005: ';' expected.
+
+1132      * Assign `setting` to `val`, or return `setting`'s value.
+                                                  ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1168:18 - error TS1005: ';' expected.
+
+1168      * Check if `setting` is enabled (truthy).
+                      ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1180:18 - error TS1005: ';' expected.
+
+1180      * Check if `setting` is disabled.
+                      ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1191:17 - error TS1005: ';' expected.
+
+1191     /** Enable `setting`. */
+                     ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1194:18 - error TS1005: ';' expected.
+
+1194     /** Disable `setting`. */
+                      ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1198:31 - error TS1005: ';' expected.
+
+1198      * Render the given view `name` name with `options`
+                                   ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1198:48 - error TS1005: ';' expected.
+
+1198      * Render the given view `name` name with `options`
+                                                    ~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1214:16 - error TS1005: ';' expected.
+
+1214      * A node `http.Server` is returned, with this
+                    ~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1215:33 - error TS1005: ';' expected.
+
+1215      * application (which is a `Function`) as its
+                                     ~~~~~~~~
+
+node_modules/@types/express-serve-static-core/index.d.ts:1283:1 - error TS1160: Unterminated template literal.
+
+1283 
+     
+
+node_modules/@types/node/crypto.d.ts:3533:17 - error TS1110: Type expected.
+
+3533     type UUID = `${string}-${string}-${string}-${string}-${string}`;
+                     ~~~
+
+node_modules/@types/node/events.d.ts:98:28 - error TS1005: ',' expected.
+
+98     type AnyRest = [...args: any[]];
+                              ~
+
+node_modules/@types/node/test.d.ts:881:34 - error TS1005: '?' expected.
+
+881             : F extends abstract new(...args: any) => infer T ? T
+                                     ~~~
+
+node_modules/@types/node/test.d.ts:881:63 - error TS1005: ':' expected.
+
+881             : F extends abstract new(...args: any) => infer T ? T
+                                                                  ~
+
+node_modules/@types/node/test.d.ts:882:13 - error TS1005: ',' expected.
+
+882             : unknown,
+                ~
+
+node_modules/@types/node/test.d.ts:884:34 - error TS1005: '?' expected.
+
+884             : F extends abstract new(...args: infer Y) => any ? Y
+                                     ~~~
+
+node_modules/@types/node/test.d.ts:884:63 - error TS1005: ':' expected.
+
+884             : F extends abstract new(...args: infer Y) => any ? Y
+                                                                  ~
+
+node_modules/@types/node/test.d.ts:885:13 - error TS1005: ',' expected.
+
+885             : unknown[],
+                ~
+
+node_modules/@types/node/test.d.ts:885:22 - error TS1005: ',' expected.
+
+885             : unknown[],
+                         ~
+
+node_modules/@types/node/test.d.ts:886:5 - error TS1109: Expression expected.
+
+886     > {
+        ~
+
+node_modules/@types/node/test.d.ts:890:24 - error TS1005: ',' expected.
+
+890         arguments: Args;
+                           ~
+
+node_modules/@types/node/test.d.ts:894:35 - error TS1005: ',' expected.
+
+894         error: unknown | undefined;
+                                      ~
+
+node_modules/@types/node/test.d.ts:900:39 - error TS1005: ',' expected.
+
+900         result: ReturnType | undefined;
+                                          ~
+
+node_modules/@types/node/test.d.ts:904:21 - error TS1005: ',' expected.
+
+904         stack: Error;
+                        ~
+
+node_modules/@types/node/test.d.ts:909:19 - error TS1005: ',' expected.
+
+909         target: F extends abstract new(...args: any) => any ? F : undefined;
+                      ~~~~~~~
+
+node_modules/@types/node/test.d.ts:909:27 - error TS1005: ':' expected.
+
+909         target: F extends abstract new(...args: any) => any ? F : undefined;
+                              ~~~~~~~~
+
+node_modules/@types/node/test.d.ts:909:36 - error TS1005: ',' expected.
+
+909         target: F extends abstract new(...args: any) => any ? F : undefined;
+                                       ~~~
+
+node_modules/@types/node/test.d.ts:909:54 - error TS1005: '{' expected.
+
+909         target: F extends abstract new(...args: any) => any ? F : undefined;
+                                                         ~~
+
+node_modules/@types/node/test.d.ts:909:63 - error TS1005: ',' expected.
+
+909         target: F extends abstract new(...args: any) => any ? F : undefined;
+                                                                  ~
+
+node_modules/@types/node/test.d.ts:909:76 - error TS1005: ',' expected.
+
+909         target: F extends abstract new(...args: any) => any ? F : undefined;
+                                                                               ~
+
+node_modules/@types/node/test.d.ts:913:22 - error TS1005: ',' expected.
+
+913         this: unknown;
+                         ~
+
+node_modules/@types/node/util.d.ts:1605:42 - error TS1005: ',' expected.
+
+1605         entries(): IterableIterator<[name: string, value: string]>;
+                                              ~
+
+node_modules/@types/node/util.d.ts:1605:44 - error TS1068: Unexpected token. A constructor, method, accessor, or property was expected.
+
+1605         entries(): IterableIterator<[name: string, value: string]>;
+                                                ~~~~~~
+
+node_modules/@types/node/util.d.ts:1605:57 - error TS1005: ';' expected.
+
+1605         entries(): IterableIterator<[name: string, value: string]>;
+                                                             ~
+
+node_modules/@types/node/util.d.ts:1605:65 - error TS1005: ';' expected.
+
+1605         entries(): IterableIterator<[name: string, value: string]>;
+                                                                     ~
+
+node_modules/@types/node/util.d.ts:1605:66 - error TS1109: Expression expected.
+
+1605         entries(): IterableIterator<[name: string, value: string]>;
+                                                                      ~
+
+node_modules/@types/node/util.d.ts:1605:67 - error TS1109: Expression expected.
+
+1605         entries(): IterableIterator<[name: string, value: string]>;
+                                                                       ~
+
+node_modules/@types/node/util.d.ts:1611:17 - error TS1005: ',' expected.
+
+1611         get(name: string): string | null;
+                     ~
+
+node_modules/@types/node/util.d.ts:1611:26 - error TS1005: ';' expected.
+
+1611         get(name: string): string | null;
+                              ~
+
+node_modules/@types/node/util.d.ts:1615:17 - error TS1005: ',' expected.
+
+1615         has(name: string): boolean;
+                     ~
+
+node_modules/@types/node/util.d.ts:1615:26 - error TS1005: ';' expected.
+
+1615         has(name: string): boolean;
+                              ~
+
+node_modules/@types/node/util.d.ts:1631:15 - error TS1005: ';' expected.
+
+1631         keys(): IterableIterator<string>;
+                   ~
+
+node_modules/@types/node/util.d.ts:1631:41 - error TS1005: '(' expected.
+
+1631         keys(): IterableIterator<string>;
+                                             ~
+
+node_modules/@types/node/util.d.ts:1646:17 - error TS1005: ',' expected.
+
+1646         set(name: string, value: string): void;
+                     ~
+
+node_modules/@types/node/util.d.ts:1646:32 - error TS1005: ',' expected.
+
+1646         set(name: string, value: string): void;
+                                    ~
+
+node_modules/@types/node/util.d.ts:1646:41 - error TS1005: ';' expected.
+
+1646         set(name: string, value: string): void;
+                                             ~
+
+node_modules/@types/node/util.d.ts:1646:47 - error TS1109: Expression expected.
+
+1646         set(name: string, value: string): void;
+                                                   ~
+
+node_modules/@types/node/util.d.ts:1650:17 - error TS1005: ';' expected.
+
+1650         values(): IterableIterator<string>;
+                     ~
+
+node_modules/@types/node/util.d.ts:1650:43 - error TS1005: '(' expected.
+
+1650         values(): IterableIterator<string>;
+                                               ~
+
+node_modules/@types/node/util.d.ts:1654:26 - error TS1005: ';' expected.
+
+1654         [Symbol.iterator]: typeof MIMEParams.prototype.entries;
+                              ~
+
+node_modules/@types/node/util.d.ts:1656:1 - error TS1128: Declaration or statement expected.
+
+1656 }
+     ~
+
+
+Found 171 errors.
